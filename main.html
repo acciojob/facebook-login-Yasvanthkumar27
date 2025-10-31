@@ -2,7 +2,108 @@
   <head>
     <title>Facebook Login</title>
   </head>
-  <body>
+  <style>
+    body {
+      background-color: #f6f6f6;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    .left, .right {
+      display: inline-block;
+      vertical-align: top;
+    }
+    .left {
+      width: 450px;
+      margin-top: 70px;
+      display: inline-block;
+    }
+    .facebook-logo {
+      width: 300px;
+      margin-bottom: 25px;
+    }
+    .description {
+      font-size: 20px;
+      color: #1c1e21;
+      margin-top: 18px;
+    }
+    .right {
+      width: 300px;
+      background: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px #ccc;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      width: 100%;
+    }
+    input[type="text"], input[type="password"] {
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 10px;
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+    button[type="submit"] {
+      background-color: #1877f2;
+      color: #fff;
+      border-radius: 5px;
+      padding: 10px 2px;
+      border: none;
+      font-size: 18px;
+      width: 100%;
+      cursor: pointer;
+    }
+    .signup {
+      display: block;
+      background-color: #42b72a;
+      color: #fff;
+      text-align: center;
+      border-radius: 5px;
+      padding: 10px 2px;
+      margin-top: 15px;
+      text-decoration: none;
+      font-size: 18px;
+    }
+    .forgot {
+      text-align: center;
+      text-decoration: none;
+      color: #1877f2;
+      margin-bottom: 8px;
+      font-size: 15px;
+      display: block;
+    }
+    .forgot:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="left">
+    <img src="https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/6kAshkK23FK.png" alt="Facebook logo" class="facebook-logo" />
+    <div class="description">
+      Facebook helps you connect and share with the people in your life.
+    </div>
+  </div>
+  <div class="right">
+    <form>
+      <input type="text" id="email" placeholder="Email address or phone number" />
+      <input type="password" id="password" placeholder="Password" />
+      <button type="submit">Log in</button>
+      <a href="#" class="forgot">Forgotten account?</a>
+    </form>
+    <a href="#" class="signup">Create new account</a>
+  </div>
+
     <!-- Write your code here -->
   </body>
 </html>
